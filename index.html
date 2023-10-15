@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }       
+        body{
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            overflow-x: hidden;
+        }
+        .card-container {
+            max-width:  80%;
+            margin: auto;
+        }
+        *
+    {
+        background-color: black !important;
+    }
+
+    .navbar
+    {
+        max-width: 100%;
+        margin: 20px;
+        border-bottom: rgb(111, 110, 110) 1px solid ;
+    }
+
+    .navbar-brand
+    {   
+        pointer-events: none;
+        cursor: default;
+        font-family: 'Lugrasimo';
+        color: white;
+        font-size: 25px;
+    }
+
+    .container {
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 1rem;
+        .card
+        {
+            border: white 2px solid;
+            border-radius: 5px;
+            font-family: 'Lugrasimo';
+        }
+    }
+    a:hover
+    {
+        text-decoration:none;
+        border: white 2px;
+    }
+
+    .contact a {
+        color: rgba(255, 255, 255, 0.683);
+    }
+
+    .contact a:hover{
+        color: #ffffff;
+        transition: color 0.5s ease;
+    }
+
+    .btn 
+    {
+        justify-content: space-between;
+        align-items: right;
+        height: 30px;
+        width: 30px;
+    }
+    .card-title
+    {
+        font-family: 'Lugrasimo';
+        color: white;
+    }
+
+    .card-text
+    {
+        font-family: 'Lugrasimo';
+        color: rgba(255, 252, 252, 0.532);
+    }
+
+
+    @media (max-width: 599px) {
+    label {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .container { grid-template-columns: repeat(4, 1fr); }
+}
+
+
+    .material-symbols-outlined {
+        font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 10,'opsz' 100;
+        color: rgb(255, 255, 255);
+    }
+
+    
+
+</style>
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar mb-5">
+        <a class="navbar-brand" >Coding Profiles</a>  
+        <span class="material-symbols-outlined">
+        check_circle
+        </span>
+    </nav>
+
+    <div class = "card-container">          
+        <div class="card mb-5">
+            <div class="row g-2">
+              <div class="col-6">
+                <img src="Coding Profiles/About.png" alt="Image" class="card-img rounded-start">
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                    <h5 class="card-title" style = "font-family: Lugrasimo;">I'm Avinash Doddi</h5>
+                    <p class="card-text" style = "font-family: Lugrasimo;">
+                        A highly skilled Full Stack Developer and Competitive Programmer. <br><br>
+                        With over 1,500 intricate coding problems solved, I'm always eager to take on new challenges. 
+                        Whether it's developing full-stack web applications or finding solutions to complex programming challenges, 
+                        I'm confident that I can tackle any problems. <br><br>
+                        Looking forward to collaborating with you!
+                        <br><br>
+                        <div class = "contact" style="justify-content: space-between;">
+                        <a href = "mailto: avinashdoddi01@gmail.com">
+                            <label>Email:</label> &nbsp;
+                            <span class="fa fa-envelope" style=" font-size: 22px; margin-right: 25px;"></span>
+                        </a>
+                        <a href = "https://www.linkedin.com/in/avinash-doddi-2001">
+                            <label>LinkedIn:</label> &nbsp; 
+                            <span class="fa fa-linkedin" style="font-size: 22px; margin-right: 25px; "></span>
+                        </a>
+                        <a href = "https://github.com/avinash-doddi">
+                            <label>GitHub:</label> &nbsp;
+                            <span class="fa fa-github" style="font-size: 22px;"></span>
+                        </a>
+                        </div>
+
+                    </p>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Cards using Bootstrap grid system -->
+    <div class="container mb-5">
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/Leetcode Logo.png" alt="Leetcode">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">LeetCode</h5>
+                <a href="https://leetcode.com/avinashdoddi2001" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/CodeChef Logo.png" alt="CodeChef">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">CodeChef</h5>
+                <!-- <p class="card-text">This is a sample card.</p> -->
+                <a href="https://www.codechef.com/users/avinashdoddi" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/CodingNinjas Logo.png" alt="CodingNinjas">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">CodingNinjas</h5>
+                <a href="https://www.codingninjas.com/studio/profile/avinashdoddi" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/CodeForces Logo.png" alt="CodeForces">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">CodeForces</h5>
+                <a href="https://codeforces.com/profile/avinashdoddi" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/HackerRank Logo.png" alt="HackerRank">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">HackerRank</h5>
+                <a href="https://www.hackerrank.com/20l31a0559" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/HackerEarth Logo.png" alt="HackerEarth">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">HackerEarth</h5>
+                <a href="https://www.hackerearth.com/@avinashdoddi2001" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/GeeksforGeeks Logo.png" alt="GeeksforGeeks">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">GeeksforGeeks</h5>
+                <a href="https://auth.geeksforgeeks.org/user/avinashdoddi2001/" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="Coding Profiles/AtCoder Logo.png" alt="AtCoder">
+            <div class="card-body">
+                <h5 class="card-title d-none d-lg-block">AtCoder</h5>
+                <a href="https://atcoder.jp/users/avinashdoddi" class="btn btn-primary">
+                    <span class="material-symbols-outlined">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
